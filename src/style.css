@@ -153,8 +153,8 @@ main {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  background-color: #f6e0c0;
-  color: #333;
+  background-color: #568203;
+  color: #fff;
   border-radius: 6px;
   padding: 8px 0;
 }
@@ -165,14 +165,14 @@ main {
   margin: 10px 20px;
   padding: 5px;
   font-weight: bold;
-  background-color: #f6e0c0;
+  background-color: #568203;
   color: #333;
   border: none;
   font-size: xx-large;
 }
 
 .recipe {
-  height: 140px;
+  height: 200px;
   overflow-y: scroll;
 }
 
