@@ -13,7 +13,7 @@ const populateMeals = (list) => {
     <div class="card-title">
           <h5>${food.strMeal}</h5>
         </div>        
-        <button type="button" class="btn-recipe">Recipe</button>
+        <!--<button type="button" class="btn-recipe">Recipe</button>-->
         <div>        
         </div>
         <div class="btn-liked">
@@ -24,7 +24,7 @@ const populateMeals = (list) => {
         </div>     
     `;
 
-    const btnRecipeElement = item.querySelector('.btn-recipe');
+    const btnRecipeElement = item.querySelector('.card-img');
     const btnLikedElement = item.querySelector('.btn-liked');
     const printLike = (data) => {
       const likesReturned = data.find(
