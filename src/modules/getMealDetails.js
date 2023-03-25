@@ -1,4 +1,6 @@
 import hideItems from './hideItems.js';
+import { displayComents, getComments } from './getComment.js';
+import newMessageForm from './postComment.js';
 
 const mainCont = document.querySelector('.main-meals-list');
 
@@ -18,11 +20,13 @@ const createPopup = (details, msgDat) => {
   messageContainer.classList.add('mesgFormContainer');
   const newMessCont = document.createElement('div');
   newMessCont.classList.add('mesgFormContainer');
+  displayComents(msgDat, messageContainer);
+  newMessageForm(newMessCont, details.idMeal);
 
   itemdata.innerHTML = `<img src="${details.strMealThumb}" width="250px"><h2>${details.strMeal}</h2><h4>Ingredients:</h4><p>${details.strIngredient1}, ${details.strIngredient2}, ${details.strIngredient3}, ${details.strIngredient4}, ${details.strIngredient5}</p><h4>Recipe:</h4>
   <p class="recipe">${details.strInstructions}</p>`;
   itemdata.id = details.idMeal;
-  myPopup.id = `myPopup${msgDat}`;
+  myPopup.id = 'myPopup';
   popupButon.innerHTML = 'X';
   popupButon.addEventListener('click', () => closePopup(myPopup));
   myPopup.classList.add('popuptext');
@@ -42,7 +46,7 @@ const getMealDetails = async (id) => {
   const responseJson = await response.json();
   const responsInfo = responseJson.meals[0];
 
-  const messageData = '';
+  const messageData = await getComments(id);
 
   createPopup(responsInfo, messageData);
 };
