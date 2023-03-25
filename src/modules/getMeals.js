@@ -1,3 +1,6 @@
+import getMealDetails from './getMealDetails.js';
+import hidenItems from './hideItems.js';
+
 const populateMeals = (list) => {
   const board = document.querySelector('.main-meals-list');
   board.innerHTML = '';
@@ -20,6 +23,12 @@ const populateMeals = (list) => {
         </div>     
     `;
 
+    const btnRecipeElement = item.querySelector('.btn-recipe');
+
+    btnRecipeElement.addEventListener('click', () => {
+      getMealDetails(food.idMeal);
+      hidenItems();
+    });
     board.appendChild(item);
   });
 };
