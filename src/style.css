@@ -109,6 +109,10 @@ main {
   grid-area: card-img;
 }
 
+.card-img :hover {
+  cursor: grab;
+}
+
 .img-food {
   width: 100%;
   min-height: 250px;
@@ -118,8 +122,8 @@ main {
 .card-title {
   grid-area: card-title;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 0.2rem;
 }
 
@@ -136,7 +140,7 @@ main {
   cursor: pointer;
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: white;
   border: none;
   color: #568203;
