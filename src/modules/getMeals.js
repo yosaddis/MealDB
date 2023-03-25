@@ -54,11 +54,16 @@ const populateMeals = (list) => {
   });
 };
 
-const getMeals = async (apiLink) => {
+export const mealCounter = (typeFoodSelected, count) => {
+  typeFoodSelected.innerHTML = `${typeFoodSelected.textContent} (${count})`;
+};
+
+const getMeals = async (apiLink, menuSelected) => {
   const request = new Request(apiLink);
   const response = await fetch(request);
-  const replayJASON = await response.json();
-  const replayInfo = replayJASON.meals;
+  const replayJSON = await response.json();
+  const replayInfo = replayJSON.meals;
+  mealCounter(menuSelected, replayInfo.length);
   populateMeals(replayInfo);
 };
 
