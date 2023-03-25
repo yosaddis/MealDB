@@ -138,6 +138,80 @@ main {
   padding: 0.1rem 0.2rem;
 }
 
+.no-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hiden {
+  display: none !important;
+}
+
+.popuptext {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  background-color: #f6e0c0;
+  color: #333;
+  border-radius: 6px;
+  padding: 8px 0;
+}
+
+.popuptext button {
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px 20px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #f6e0c0;
+  color: #333;
+  border: none;
+  font-size: xx-large;
+}
+
+.recipe {
+  height: 140px;
+  overflow-y: scroll;
+}
+
+.mesgFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mesgContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mesgContent input,
+.mesgContent textarea {
+  margin-bottom: 10px;
+  color: #333;
+  border-radius: 6px;
+  font-size: medium;
+}
+
+.mesgContent input[type='button'] {
+  background-color: #f6e0c0;
+  border: 1px solid #333;
+  font-weight: bold;
+  padding: 5px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.mesgContent div {
+  width: 100%;
+}
+
 @media only screen and (max-width: 767px) {
   header {
     flex-direction: column;
