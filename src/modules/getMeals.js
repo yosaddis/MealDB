@@ -58,7 +58,7 @@ export const mealCounter = (typeFoodSelected, count) => {
   typeFoodSelected.innerHTML = `${typeFoodSelected.textContent} (${count})`;
 };
 
-const getMeals = async (apiLink,menuSelected) => {
+const getMeals = async (apiLink, menuSelected) => {
   const request = new Request(apiLink);
   const response = await fetch(request);
   const replayJSON = await response.json();
@@ -66,7 +66,5 @@ const getMeals = async (apiLink,menuSelected) => {
   mealCounter(menuSelected, replayInfo.length);
   populateMeals(replayInfo);
 };
-
-
 
 export { getMeals as default };

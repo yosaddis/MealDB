@@ -9,36 +9,36 @@ const allvegan = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegan';
 const allvege = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian';
 
 liStarter.addEventListener('click', () => {
-	menuSelected = liStarter;
+  menuSelected = liStarter;
   liStarter.classList.add('selected');
   liVegan.classList.remove('selected');
   livege.classList.remove('selected');
-	menuSelected.textContent = 'Starter';
+  menuSelected.textContent = 'Starter';
   livege.textContent = 'Vegeterian';
   liVegan.textContent = 'Vegan';
-	getMeals(allStarter, menuSelected);
+  getMeals(allStarter, menuSelected);
 });
 
 liVegan.addEventListener('click', () => {
-	menuSelected = liVegan;
+  menuSelected = liVegan;
   liStarter.classList.remove('selected');
   liVegan.classList.add('selected');
   livege.classList.remove('selected');
-	menuSelected.textContent = 'Vegan';
+  menuSelected.textContent = 'Vegan';
   liStarter.textContent = 'Starter';
   livege.textContent = 'Vegeterian';
-	getMeals(allvegan, menuSelected);
+  getMeals(allvegan, menuSelected);
 });
 
 livege.addEventListener('click', () => {
-	menuSelected = livege;
+  menuSelected = livege;
   liStarter.classList.remove('selected');
   liVegan.classList.remove('selected');
   livege.classList.add('selected');
-	menuSelected.textContent = 'Vegeterian';
+  menuSelected.textContent = 'Vegeterian';
   liStarter.textContent = 'Starter';
   liVegan.textContent = 'Vegan';
-	getMeals(allvege, menuSelected);
+  getMeals(allvege, menuSelected);
 });
 
 getMeals(allStarter, menuSelected);
