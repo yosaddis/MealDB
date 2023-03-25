@@ -51,7 +51,7 @@ The objective of the project is to develop a dynamic web application that meets 
 
 ## Please take a look at the video below
 
-[Video Recording](#)
+[Video Recording](https://www.loom.com/share/8dc4cd612ab347b79b7ed9c625141e8b)
 ## How it works
 
 The Meal DB web application allows users to like, comment, and make a reservation for their favorite meal.
