@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+
 <div align="center">
 
   <h3><b>Javascript Capstone Project</b></h3>
@@ -30,11 +31,13 @@
 
 # 📖 [Eat Healthy] <a name="about-project"></a>
 
-The Eat Healthy is a web application that utilizes an external API from 
-[https://www.themealdb.com/api/json/v1/1/filter.php?a=British] to showcase a list of healthy meals. Users have the ability to interact with the meals by liking them, leaving comments, or reserving a meal using an involvement API. 
+The Eat Healthy is a web application that utilizes an external API from
+[https://www.themealdb.com/api/json/v1/1/filter.php?a=British] to showcase a list of healthy meals. Users have the ability to interact with the meals by liking them, leaving comments, or reserving a meal using an involvement API.
 
 The objective of the project is to develop a dynamic web application that meets the standards of a professional web developer.
-## Project requirements 
+
+## Project requirements
+
 - [x] Use ES6 modules, with import and export.
 - [x] Use callbacks and promises.
 - [x] Use Webpack to bundle JavaScript.
@@ -45,19 +48,22 @@ The objective of the project is to develop a dynamic web application that meets 
 - [x] page counter.
 
 ## Project presentation
+
 ## Screenshot
+
 ![screenshot](./screenshoot/eat%20healthy%20home%20page.png)
 ![screenshot](./screenshoot/eat%20healthy%20popup.png)
 
 ## Please take a look at the video below
 
 [Video Recording](https://www.loom.com/share/8dc4cd612ab347b79b7ed9c625141e8b)
+
 ## How it works
 
 The Meal DB web application allows users to like, comment, and make a reservation for their favorite meal.
-* By clicking on `like button` the number of like is increased and stored in the involvement API;
-* By clicking on the `Comment button` to display the description of the selected meal, the list of all comments, and added a new comment;
 
+- By clicking on `like button` the number of like is increased and stored in the involvement API;
+- By clicking on the `Comment button` to display the description of the selected meal, the list of all comments, and added a new comment;
 
 ## Live Demo
 
@@ -81,11 +87,12 @@ To get a local copy up and running follow these simple example steps:
 #### Install locally the code of the application
 
 In order to install a local version of this project and please do the following steps:
+
 - Install the latest version of any code editor.
 - install the latest version of GIT.
 - open your terminal
-- Go to the [repository](https://github.com/yosaddis/MealDB/)  and clone it with `git clone git@github.com:yosaddis/MealDB.git' .
-- open the repository cloned with `cd capstone-project`
+- Go to the [repository](https://github.com/yosaddis/MealDB/) and clone it with `git clone git@github.com:yosaddis/MealDB.git' .
+- open the repository cloned with `cd MealDB`
 - if your code editor is VsCode type `code .`
 - Install webpack with: `npm install --save-dev webpack webpack-cli`
 - To run it type `nmp run start` or run live server from the docs directory
@@ -114,7 +121,6 @@ In order to install a local version of this project and please do the following 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -128,11 +134,11 @@ Please give a ⭐️ if you like this project!
 - Thank you Microverse community.
 
 ## License
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is. [MIT](./LICENSE.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
